@@ -52,14 +52,18 @@
 
     <!-- a-frame scene -->
     <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
+        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" gesture-detector>
         <!-- a-nft is the anchor that defines an Image Tracking entity -->
         <!-- on 'url' use the path to the Image Descriptors created before. -->
         <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
         <a-nft type="nft" url="mantis-arjs-test/assets/markers/image-card" smooth="true" smoothCount="10"
-            smoothTolerance=".01" smoothThreshold="5">
+            smoothTolerance=".01" smoothThreshold="5" raycaster="objects: .clickable" emitevents="true"
+            cursor="fuse: false; rayOrigin: mouse;">
             <!-- as a child of the a-nft entity, you can define the content to show. here's a GLTF model entity -->
-            <a-entity gltf-model="assets/final_apartment.gltf" scale="5 5 5" position="50 150 0">
+            <a-entity gltf-model="assets/final_apartment.gltf" scale="2 2 2" position="0 5 0" class="clickable"
+                gesture-handler>
+            </a-entity>
+            <a-entity gltf-model="assets/interior_2.gltf" scale="2 2 2" position="10 5 0">
             </a-entity>
         </a-nft>
         <!-- static camera that moves according to the device movemenents -->
