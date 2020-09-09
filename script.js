@@ -1,12 +1,14 @@
+document.querySelector('#apartment').addEventListener('click', moveRight());
+
 let flag = true;
 
 function moveRight() {
     debugger;
     if (flag) {
         flag = !flag;
-        return '5 0 0';
+        this.setAttribute('position', '5 0 0');;
     } else {
         flag = !flag;
-        return '-5 0 0'
+        this.setAttribute('position', '-5 0 0');
     }
 }
