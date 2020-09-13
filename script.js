@@ -26,7 +26,7 @@ function run() {
                 property: "scale",
                 dur: 2000,
                 easing: "easeInOutSine",
-                to: "4 2 0.2"
+                to: "100 50 5"
             });
             card.setAttribute("animation__position", {
                 property: "position",
@@ -59,7 +59,7 @@ function run() {
                 property: "scale",
                 dur: 2000,
                 easing: "easeInOutSine",
-                to: "4 2 0.2"
+                to: "100 50 5"
             });
             card.setAttribute("animation__position", {
                 property: "position",
@@ -104,7 +104,7 @@ function run() {
             property: "scale",
             dur: 2000,
             easing: "easeInOutSine",
-            to: "0.2 0.2 0.2"
+            to: "5 5 5"
         });
         apartment.setAttribute("animation__position", {
             property: "position",
@@ -145,7 +145,7 @@ function run() {
             property: "scale",
             dur: 2000,
             easing: "easeInOutSine",
-            to: "0.2 0.2 0.2"
+            to: "5 5 5"
         });
         flat.setAttribute("animation__position", {
             property: "position",
