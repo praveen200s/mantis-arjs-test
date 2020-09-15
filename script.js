@@ -138,7 +138,7 @@ function run() {
             property: "position",
             dur: 2000,
             easing: "easeInOutSine",
-            to: "0 130 380",
+            to: "0 130 -380",
         });
         flat.setAttribute("animation__visible", {
             property: "scale",
