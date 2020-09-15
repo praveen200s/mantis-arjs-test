@@ -150,7 +150,7 @@ function run() {
             property: "position",
             dur: 2000,
             easing: "easeInOutSine",
-            to: "0 0 0",
+            to: "0 50 0",
         });
         apartment.setAttribute("animation__visible", {
             property: "scale",

@@ -58,12 +58,12 @@
             smoothTolerance=".01" smoothThreshold="10">
 
             <!-- static camera that moves according to the device movemenents -->
-            <a-entity position="0 -250 0" look-at="[camera]">
+            <a-entity position="0 0 0" look-at="[camera]">
                 <a-box gltf-model="assets/final_apartment.gltf" depth="1" height="1" width="1" position="0 0 0"
                     material="" geometry="" id="apartment" class="clickable" scale="25 25 25"
                     animation__rotate="property:rotation; easing:linear;  dur: 20000; dir:alternate; loop:true; to: 0 360 0">
                 </a-box>
-                <a-box gltf-model="assets/interior_2.gltf" depth="1" height="1" width="1" position="0 0 -5" material=""
+                <a-box gltf-model="assets/interior_2.gltf" depth="1" height="1" width="1" position="0 50 -5" material=""
                     geometry="" scale="0.01 0.01 0.01" id="flat" class="clickable"
                     animation__rotate="property:rotation; easing:linear;  dur: 40000; dir:alternate; loop:true; to: 0 360 0">
                 </a-box>
