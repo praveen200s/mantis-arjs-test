@@ -55,10 +55,10 @@
         <!-- on 'url' use the path to the Image Descriptors created before. -->
         <!-- the path should end with the name without the extension e.g. if file is 'pinball.fset' the path should end with 'pinball' -->
         <a-nft type="nft" url="mantis-arjs-test/assets/markers/image-card1" smooth="true" smoothCount="10"
-            smoothTolerance=".01" smoothThreshold="8">
+            smoothTolerance=".01" smoothThreshold="5">
 
             <!-- static camera that moves according to the device movemenents -->
-            <a-entity position="0 -25 0">
+            <a-entity position="0 -250 0">
                 <a-box gltf-model="assets/final_apartment.gltf" depth="1" height="1" width="1" position="0 0 0"
                     material="" geometry="" id="apartment" class="clickable" scale="25 25 25" look-at="[camera]"
                     animation__rotate="property:rotation; easing:linear;  dur: 20000; dir:alternate; loop:true; to: 0 360 0">
