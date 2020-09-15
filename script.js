@@ -58,7 +58,7 @@ function run() {
                 property: "scale",
                 dur: 2000,
                 easing: "easeInOutSine",
-                to: "50 25 2.5",
+                to: "500 250 25",
             });
             card.setAttribute("animation__position", {
                 property: "position",
